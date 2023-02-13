@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'Porcelain';
+	src: url('../Porcelain_fonts/Porcelain.ttf');
+}
+
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  background-color: #0b1522;
+	font-family: 'Porcelain';
+}
+
+.wrapper {
+	max-width: 1400px;
+}
+.heart {
+	margin: 0 auto;
+	height: 350px;
+	width: 350px;
+	background: #f20044;
+	position: relative;
+	box-shadow: -10px 10px 90px #f20044;
+	animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart{
+	0% {
+		transform: rotate(-45deg) scale(1.07)
+	}
+	80% {
+		transform: rotate(-45deg) scale(1.0)
+	}
+	100% {
+		transform: rotate(-45deg) scale(0.8)
+	}
+}
+
+
+.heart::before {
+	content: '';
+	position: absolute;
+	height: 350px;
+	width: 350px;
+	background: #f20044;
+	top: -50%;
+	border-radius: 50%;
+	box-shadow: -10px -10px 90px #f20044;
+}
+
+.heart::after {
+	content: '';
+	position: absolute;
+	height: 350px;
+	width: 350px;
+	background: #f20044;
+	right: -50%;
+	border-radius: 50%;
+	box-shadow: 10px 10px 90px #f20044;
+}
+
+.text-main{
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	font-size: 140px;
+	width: 700px;
+	height: 500px;
+	color: pink;
+	background-color: #0b1522;
+}
+
+.text-second {
+	display: none;
+	margin: 300px auto 0 auto;
+	font-size: 140px;
+	width: 600px;
+	height: 500px;
+	color: pink;
+	background-color: #0b1522;
+	text-align: center;
+}
+
+.red {
+	color: red;
+}
+
+.active {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
