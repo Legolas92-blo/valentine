@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Porcelain';
-	src: url('../Porcelain_fonts/Porcelain.ttf');
+	src: url('Porcelain_fonts/Porcelain.ttf');
 }
 
 
@@ -71,10 +71,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
 	justify-content: center;
-	font-size: 140px;
-	width: 700px;
+	font-size: 165px;
+	width: 755px;
 	height: 500px;
 	color: pink;
 	background-color: #0b1522;
@@ -83,8 +82,8 @@ body {
 .text-second {
 	display: none;
 	margin: 300px auto 0 auto;
-	font-size: 140px;
-	width: 600px;
+	font-size: 165px;
+	width: 755px;
 	height: 500px;
 	color: pink;
 	background-color: #0b1522;
